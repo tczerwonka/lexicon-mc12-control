@@ -20,11 +20,14 @@ board and the RS232 input goes to pin 2 on the DE9.
 
 Ground to pin 5 on the DE9.
 
-The converter board is powered with the ESP32 3.3 volt output.
+The converter board is powered with the ESP32 3.3v and ground pins.  See
+picture below for further information.
 
-This has only been tested on an Lexicon MC12-HD.  The code is currently
+This has only been tested on my Lexicon MC12-HD.  The code is currently
 modified slightly in the input drop-down for the external hardware on my
 Lexicon.  I have not tested it on any other models. 
+This only has control for the main output, and not Zone 2 or Record.  I
+don't use either of those so I did not include them.
 
 There are two fold out menus - for the menu config to set unit parameters
 and also for debugging information.  Both can be ignored under normal use.
@@ -34,10 +37,10 @@ On initial startup, the unit has a "Lexicon" SSID with ip address of
 192.168.4.1 - a modern Android phone on initial connection will typically
 automatically connect and send you to the UI for connecting to your own
 home access point.  The blue LED turns on when WiFi is connected.  The
-red LED is power.
+red LED is power.  Ideally WiFi setup is only done once.
 
-After connection the unit uses mDNS and on a correctly configured network
-and PC / phone, your web browser -may- find it at [http://lexicon.local](http://lexicon.local) .
+After connection the unit uses mDNS and with a correctly configured network
+and PC / phone, your web browser -may- find it at [http://lexicon.local](http://lexicon.local) .  
 
 Additional debugging output is available on the ESP32 serial port, 115200
 baud - which includes MAC address, IP address, additional debug output, etc.
