@@ -11,6 +11,16 @@ and DE9 male plug.  It is powered via the ESP32 USB-C port.
 
 [RS232 to TTL converter -- amazon.com/dp/B00LUDCAXQ](https://www.amazon.com/dp/B00LUDCAXQ)
 
+ESP32 GPIO 21 is data out - it connects to the TTL input of the converter
+board and the RS232 output goes to pin 3 on the DE9.
+
+ESP32 GPIO 10 is data in - it connects to the TTL output of the converter
+board and the RS232 input goes to pin 2 on the DE9.
+
+Ground to pin 5 on the DE9.
+
+The converter board is powered with the ESP32 3.3 volt output.
+
 This has only been tested on an Lexicon MC12-HD.  The code is currently
 modified slightly in the input drop-down for the external hardware on my
 Lexicon.  I have not tested it on any other models.
