@@ -65,3 +65,6 @@ to a new AP on the next reset.
 ![raw unit](unit.jpg)
 The unpackaged unit - ESP32-C3 and level converter connected to serial
 port 1.
+
+Some of the coding was completed with the assistance of Microsoft
+Copilot -- I have no interest in web programming.  
