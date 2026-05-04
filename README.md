@@ -22,7 +22,8 @@ This uses the tzapu/WiFiManager library to handle the WiFi / SSID setup.
 On initial startup, the unit has a "Lexicon" SSID with ip address of
 192.168.4.1 - a modern Android phone on initial connection will typically
 automatically connect and send you to the UI for connecting to your own
-home access point.
+home access point.  The blue LED turns on when WiFi is connected.  The
+red LED is power.
 
 After connection the unit uses mDNS and on a correctly connected network,
 your web browser -may- find it at [http://lexicon.local](http://lexicon.local) .
@@ -31,13 +32,20 @@ Additional debugging output is available on the ESP32 serial port, 115200
 baud - which includes MAC address, IP address, etc.
 
 ![startup](startup.png)
-Unit startup
+Unit startup.  The Menu pull out has a 'power' button that provides
+the ability to turn the unit on, but not off.
 
 ![normal operation](running.png)
-Un-expanded menus during normal operation.
+Un-expanded menus during normal operation.  Here I have the Input
+drop-down menus customized for both the front label and what I have
+connected.
 
 ![menu control](menu.png)
 Expanded menu for unit setup.
 
 ![debug output](debug.png)
-All menus expanded including debugging output.
+All menus expanded including debugging output.  The "Reset WiFi" button
+reset the unit entirely and prompts you to connect to a new AP.
+
+![raw unit](unit.jpg)
+The unpackaged unit - ESP32-C3 and level converter.
