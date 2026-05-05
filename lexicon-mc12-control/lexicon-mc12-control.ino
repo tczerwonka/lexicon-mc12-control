@@ -184,10 +184,10 @@ static void appendGlyph(String& out, uint8_t c) {
   // Volume bar chars 0x8E-0x93
   if (c == 0x8E) { out += ' '; return; }
   if (c == 0x8F) { out += "|"; return; }
-  if (c == 0x90) { out += "||"; return; }
-  if (c == 0x91) { out += "|||"; return; }
-  if (c == 0x92) { out += "||||"; return; }
-  if (c == 0x93) { out += "|||||"; return; }
+  if (c == 0x90) { out += "░"; return; }
+  if (c == 0x91) { out += "▒"; return; }
+  if (c == 0x92) { out += "▓"; return; }
+  if (c == 0x93) { out += "█"; return; }
 
   // dtsNEO6: 0x94..0x98
   if (c == 0x94) { out += 'N'; return; }
